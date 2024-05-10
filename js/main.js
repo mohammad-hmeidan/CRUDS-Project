@@ -139,4 +139,3 @@ function showErrors(errors, numberOfErrors) {
     alertify.set("notifier", "position", "top-left");
   }
 }
-let productsArray = [];
