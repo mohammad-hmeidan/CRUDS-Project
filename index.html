@@ -6,18 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRUDS</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- include the style -->
+    <link rel="stylesheet" href="css/alertify.min.css" />
   </head>
   <body>
+    <ul class="notifications"></ul>
+    <div class="container">
+      <nav>
+        <div class="logo">CRUDS</div>
+        <ul class="links">
+          <li><a href="/index.html">Create Product</a></li>
+          <li><a href="/show.html">Show Products</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="crud">
       <div class="container">
-        <div class="head">
-          <h2>Cruds</h2>
-          <p>Product Management System</p>
-        </div>
         <div class="inputs">
           <input placeholder="Title" type="text" id="title" />
           <div class="price">
             <input
+              required
               onkeyup="getTotal()"
               type="number"
               placeholder="Price"
@@ -28,68 +39,27 @@
               type="number"
               placeholder="Taxes"
               id="taxes"
-              value="0"
             />
             <input
               onkeyup="getTotal()"
               type="number"
               placeholder="Ads"
               id="ads"
-              value="0"
             />
             <input
               onkeyup="getTotal()"
               type="number"
               placeholder="Discount"
               id="discount"
-              value="0"
             />
             <small id="total"></small>
           </div>
-          <input type="number" placeholder="Count" id="count" value="1" />
+          <input type="number" placeholder="Count" id="count" />
           <input type="text" placeholder="Category" id="category" />
           <button id="submit">Create</button>
         </div>
-        <div class="outputs">
-          <div class="searchblock">
-            <input
-              onkeyup="serachData(this.value)"
-              type="text"
-              id="search"
-              placeholder="Search"
-            />
-            <div class="btnsearch">
-              <button onclick="getSearchMood(this.id)" id="searchtitle">
-                Search by title
-              </button>
-              <button onclick="getSearchMood(this.id)" id="searchcatigory">
-                Search by catigory
-              </button>
-            </div>
-          </div>
-          <div id="deletall"></div>
-          <table>
-            <thead>
-              <tr>
-                <th>id</th>
-                <th>title</th>
-                <th>count</th>
-                <th>price</th>
-                <th>taxes</th>
-                <th>ads</th>
-                <th>discount</th>
-                <th>Total</th>
-                <th>category</th>
-                <th>Update</th>
-                <th>sell</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
-      </div>
-    </div>
 
-    <script src="main.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="js/alertify.min.js"></script>
   </body>
 </html>

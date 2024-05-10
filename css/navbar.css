@@ -1,0 +1,29 @@
+.container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.container nav .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(to right, var(--first-color), var(--third-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.container nav ul {
+  display: flex;
+  gap: 15px;
+}
+.container nav ul li a {
+  color: var(--first-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .container nav ul li a {
+    font-size: 0.9rem;
+  }
+}

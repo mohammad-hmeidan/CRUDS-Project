@@ -1,0 +1,41 @@
+@media (max-width: 767px) {
+  button {
+    font-size: 1rem;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.crud .container .outputs .searchblock input {
+  margin-top: 10px;
+}
+.crud .container .outputs .searchblock .btnsearch {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .crud .container .outputs .searchblock .btnsearch button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+.crud .container .outputs .table {
+  overflow-x: auto;
+}
+.crud .container .outputs table {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+  color: var(--first-color);
+}
+.crud .container .outputs table th {
+  text-transform: uppercase;
+}
+.crud .container .outputs table th,
+.crud .container .outputs table td {
+  padding: 5px;
+}
+.crud .container .outputs table tbody tr td button {
+  font-size: 1rem;
+  font-weight: normal;
+}
