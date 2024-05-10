@@ -11,7 +11,7 @@ let notifications = document.querySelector(".notifications");
 let mood = "create";
 let tmp;
 if (localStorage.getItem("mood") != null) {
-  mood = localStorage.mood;
+  mood = JSON.parse(localStorage.mood);
 } else {
   localStorage.setItem("mood", JSON.stringify(mood));
 }

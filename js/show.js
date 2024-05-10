@@ -163,5 +163,5 @@ function serachData(value) {
 function updateData(i) {
   localStorage.setItem("mood", "update");
   localStorage.setItem("update", JSON.stringify(i));
-  window.location.pathname = "/index.html";
+  window.location.href = "index.html";
 }
